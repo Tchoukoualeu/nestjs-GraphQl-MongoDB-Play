@@ -14,9 +14,11 @@ This should update the `graphql.ts` file with the new types
 
 ## Dev
 
-![](/docs/images/overview.png)
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://raw.githubusercontent.com/Tchoukoualeu/nestjs-GraphQl-MongoDB-Play/main/docs/images/overview.png" width="400" alt="Nest Logo" /></a>
+</p>
 
-1. Replace MLAB_URI****\*\*****\*\*****\*\*****\_\_\_\_****\*\*****\*\*****\*\***** in the app.module.ts with the URI of your mongo instance.
+1. Replace MLAB_URI\***\*\*\*\*\***\*\*\***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***\*\*\***\*\*\*\*\*** in the app.module.ts with the URI of your mongo instance.
 2. `npm run start`
 3. Nagivate to `http://localhost:3002/graphql`
 
