@@ -6,7 +6,7 @@
 
 ## Generate ts type from graphQl type
 
-1. Create the graphQl type (ie. orders.graphql)
+1. Create the graphQl type (ie. `orders.graphql`)
 2. run `tsc src/generate-types.ts`
 3. run `node src/generate-types.js`
 
