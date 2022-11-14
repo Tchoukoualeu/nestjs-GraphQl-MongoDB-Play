@@ -1,0 +1,49 @@
+enum StateType {
+  OPEN
+  IN_PROGRESS
+  COMPLETE
+}
+
+type Order {
+  _id: ID!
+  lastUpdatedAt: String!
+  createdAt: String!
+  customer: Customer!
+  lineItems: [LineItem!]
+  currentState: StateType!
+  stateHistory: [History]
+}
+
+type Customer {
+  fname: String!
+  lname: String!
+}
+
+type History {
+  _id: ID!
+  state: StateType!
+  createdAt: String!
+  assignedTo: String
+}
+
+type LineItem {
+  _id: ID!
+  sku: String!
+  name: String!
+}
+
+input UpdateOrderInput {
+  _id: ID!
+  currentState: StateType!
+  createdAt: String!
+  assignedTo: String
+}
+
+type Query {
+  orders: [Order]!
+  order(_id: ID!): Order
+}
+
+type Mutation {
+  updateOrder(updateOrderInput: UpdateOrderInput!): Order!
+}
