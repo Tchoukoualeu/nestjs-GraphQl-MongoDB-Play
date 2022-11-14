@@ -12,7 +12,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
       driver: ApolloDriver,
     }),
     MongooseModule.forRoot(
-      'MLAB_URI________________________________________________',
+      'should implement .env to put this value inside',
     ),
   ],
 })
